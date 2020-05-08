@@ -9,11 +9,11 @@ import java.util.List;
 public class ActivityWindow {
 	private final List<Activity> activities = new LinkedList<>();
 
-	public Money calculateBalance(AccountId id) {
+	public Money calculateBalance(final AccountId id) {
 		return null;
 	}
 
-	public void addActivity(Activity activity) {
-		activities.add(activity);
+	public void addActivity(final Activity activity) {
+		this.activities.add(activity);
 	}
 }

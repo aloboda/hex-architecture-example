@@ -28,13 +28,13 @@ public class Account {
 		return true;
 	}
 
-	private boolean mayWithdraw(Money money) {
-		return Money.add(this.calculateBalance(), money.negate()).isPositive();
-	}
-
-	public void deposit(final Money money, AccountId sourceAccountId) {
+	public void deposit(final Money money, final AccountId sourceAccountId) {
 		final Activity deposit = new Activity(this.id, sourceAccountId, this.id, LocalDateTime.now(), money);
 
 		this.activityWindow.addActivity(deposit);
+	}
+
+	private boolean mayWithdraw(final Money money) {
+		return Money.add(this.calculateBalance(), money.negate()).isPositive();
 	}
 }

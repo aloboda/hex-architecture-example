@@ -14,7 +14,7 @@ public class SendMoneyCommand {
 	@NonNull
 	private final Money money;
 
-	public SendMoneyCommand(AccountId sourceAccountId, AccountId targetAccountId, Money money) {
+	public SendMoneyCommand(final AccountId sourceAccountId, final AccountId targetAccountId, final Money money) {
 		requireGreaterThan(money, Money.ZERO);
 		this.sourceAccountId = sourceAccountId;
 		this.targetAccountId = targetAccountId;
@@ -22,7 +22,7 @@ public class SendMoneyCommand {
 	}
 
 	//TODO:andrii.loboda:2020-05-02: builder but with validation
-	private void requireGreaterThan(Money money, Money baseline) {
+	private void requireGreaterThan(final Money money, final Money baseline) {
 		if (money.getValue().compareTo(baseline.getValue()) <= 0) {
 			throw new IllegalArgumentException(
 					String.format("Passed money: %s should be more than %s", money, baseline)

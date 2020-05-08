@@ -12,12 +12,12 @@ class AccountPersistenceAdapter implements UpdateAccountStatePort, LoadAccountPo
 	private final Map<AccountId, Account> accountRepo = new HashMap<>();
 
 	@Override
-	public void updateAccount(Account account) {
-		accountRepo.put(account.getId(), account);
+	public void updateAccount(final Account account) {
+		this.accountRepo.put(account.getId(), account);
 	}
 
 	@Override
-	public Account loadAccount(AccountId id) {
-		return accountRepo.get(id);
+	public Account loadAccount(final AccountId id) {
+		return this.accountRepo.get(id);
 	}
 }
