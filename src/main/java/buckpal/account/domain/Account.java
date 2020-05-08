@@ -1,7 +1,10 @@
 package buckpal.account.domain;
 
+import lombok.Value;
+
 import java.time.LocalDateTime;
 
+@Value
 public class Account {
 	private AccountId id;
 	private Money baselineBalance;
@@ -27,11 +30,9 @@ public class Account {
 		return Money.add(this.calculateBalance(), money.negate()).isPositive();
 	}
 
-	public boolean deposit(final Money money, AccountId sourceAccountId) {
+	public void deposit(final Money money, AccountId sourceAccountId) {
 		final Activity deposit = new Activity(this.id, sourceAccountId, this.id, LocalDateTime.now(), money);
 
 		this.activityWindow.addActivity(deposit);
-
-		return true;
 	}
 }
