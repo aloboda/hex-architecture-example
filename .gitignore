@@ -1,6 +1,5 @@
 *.iml
-.idea
-!.idea/codeStyles
-!.idea/inspectionProfiles
+.idea/*.xml
+.idea/.gitignore
 build
 .gradle

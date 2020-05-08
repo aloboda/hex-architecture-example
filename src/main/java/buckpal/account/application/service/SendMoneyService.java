@@ -9,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 //@Transactional //TODO:andrii.loboda:2020-05-07: make transactional
-public class SendMoneyService implements SendMoneyUseCase {
+class SendMoneyService implements SendMoneyUseCase {
 	private final LoadAccountPort loadAccountPort;
 	private final UpdateAccountStatePort updateAccountStatePort;
 

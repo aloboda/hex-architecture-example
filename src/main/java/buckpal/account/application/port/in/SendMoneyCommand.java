@@ -1,7 +1,7 @@
 package buckpal.account.application.port.in;
 
-import buckpal.account.domain.AccountId;
-import buckpal.account.domain.Money;
+import buckpal.account.domain.common.AccountId;
+import buckpal.account.domain.common.Money;
 import lombok.Getter;
 import lombok.NonNull;
 

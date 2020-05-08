@@ -1,5 +1,8 @@
 package buckpal.account.domain;
 
+import buckpal.account.domain.common.AccountId;
+import buckpal.account.domain.common.Money;
+
 import java.time.LocalDateTime;
 
 public class Activity {

@@ -1,4 +1,4 @@
-package buckpal.account.domain;
+package buckpal.account.domain.common;
 
 import lombok.Getter;
 
