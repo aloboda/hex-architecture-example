@@ -1,4 +1,6 @@
 *.iml
-.idea/
-build/
-.gradle/
+.idea
+!.idea/codeStyles
+!.idea/inspectionProfiles
+build
+.gradle

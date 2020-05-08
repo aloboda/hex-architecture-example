@@ -10,15 +10,21 @@ Get Your Hands Dirty on Clean Architecture Tom Hombergs
 This project aims to build exemplar application that keeps the best practices of the architecture above.
 
 . No-dependencies for domain: entities and services
-. Mapping: Full
+. Mapping: Full(with Exception for outgoing ports, e.g. persistence)
 . Multi-module project to enforce dependency direction
 
-
 == Diagram
+
+TBD
 
 == Roadmap
 
 . add Project settings and inspection profile
+. add tests for domain model
 . Extract into modules
+.. configuration(application assembler)
+.. adapters(incoming and outgoing ports)
+.. application(entities and services)
+
 . address all todos
-. Expand on more elaborate example
+. Extend to more elaborate example
