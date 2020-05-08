@@ -1,0 +1,24 @@
+= Hexagonal Architecture Example
+v0.1
+:toc:
+
+== Overview
+
+Following the book:
+Get Your Hands Dirty on Clean Architecture Tom Hombergs
+
+This project aims to build exemplar application that keeps the best practices of the architecture above.
+
+. No-dependencies for domain: entities and services
+. Mapping: Full
+. Multi-module project to enforce dependency direction
+
+
+== Diagram
+
+== Roadmap
+
+. add Project settings and inspection profile
+. Extract into modules
+. address all todos
+. Expand on more elaborate example
