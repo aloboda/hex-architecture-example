@@ -20,11 +20,12 @@ TBD
 == Roadmap
 
 . add Project settings and inspection profile
-. add tests for domain model
+. add tests
+.. domain model
+.. re-read what his recommendation is.
 . Extract into modules
 .. configuration(application assembler)
 .. adapters(incoming and outgoing ports)
 .. application(entities and services)
-
 . address all todos
 . Extend to more elaborate example
